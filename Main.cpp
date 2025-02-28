@@ -37,10 +37,10 @@ int main()
     }
 
     if (good) {
-        std::cout << "Òåñòû ïðîéäåíû" << std::endl;
+        std::cout << "Ã’Ã¥Ã±Ã²Ã» Ã¯Ã°Ã®Ã©Ã¤Ã¥Ã­Ã»" << std::endl;
     }
     else {
-        std::cout << "Òåñòû ïðîâàëåíû" << std::endl;
+        std::cout << "Ã’Ã¥Ã±Ã²Ã» Ã¯Ã°Ã®Ã¢Ã Ã«Ã¥Ã­Ã»" << std::endl;
     }
     return 0;
 }

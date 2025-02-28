@@ -68,14 +68,14 @@ public:
                 delete[] pass_sha1_hash;
         }
 
-        // копирует логин, забирает внутрь хеш
+        // ГЄГ®ГЇГЁГ°ГіГҐГІ Г«Г®ГЈГЁГ­, Г§Г ГЎГЁГ°Г ГҐГІ ГўГ­ГіГІГ°Гј ГµГҐГё
         AuthData(char login_[LOGINLENGTH], uint* sh1) {
             memcpy(login, login_, LOGINLENGTH);
             pass_sha1_hash = sh1;
             status = CellStatus::engaged;
         }
 
-        // копирует всё
+        // ГЄГ®ГЇГЁГ°ГіГҐГІ ГўГ±Вё
         AuthData& operator = (const AuthData& other) 
         {
             memcpy(login, other.login, LOGINLENGTH);
@@ -87,7 +87,7 @@ public:
             return *this;
         }
 
-        // как из класса User вытащить логин в форме login_, сделать из него login и уже этот стринговый логин преобразовать в char login[LOGINLENGTH]?]
+        // ГЄГ ГЄ ГЁГ§ ГЄГ«Г Г±Г±Г  User ГўГ»ГІГ Г№ГЁГІГј Г«Г®ГЈГЁГ­ Гў ГґГ®Г°Г¬ГҐ login_, Г±Г¤ГҐГ«Г ГІГј ГЁГ§ Г­ГҐГЈГ® login ГЁ ГіГ¦ГҐ ГЅГІГ®ГІ Г±ГІГ°ГЁГ­ГЈГ®ГўГ»Г© Г«Г®ГЈГЁГ­ ГЇГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ ГІГј Гў char login[LOGINLENGTH]?]
         char login[LOGINLENGTH];
         uint* pass_sha1_hash;
         CellStatus status;
